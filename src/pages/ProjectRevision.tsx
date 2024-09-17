@@ -23,9 +23,7 @@ const ProjectRevision = () => {
   const [isDesignClickeable, setIsDesignClickeable] = useState(false);
   const { comments, loading } = useTypedSelector((state) => state.comments);
 
-
   const [floatingForm, setFloatingForm] = useState<Coordinates | null>(null);
-
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
@@ -51,7 +49,6 @@ const ProjectRevision = () => {
       console.log(error);
     }
   }
-
 
   const handleClick = (e: MouseEvent<HTMLImageElement>) => {
 
@@ -81,11 +78,11 @@ const ProjectRevision = () => {
               slots={{ root: IconButton }}
               slotProps={{ root: { variant: 'plain', color: 'neutral' } }}
             >
-              <img style={{ width: '3rem', borderRadius: '50%', marginRight: '5px' }} src={currentUser?.picture} alt={currentUser?.name} />
+              <img style={{ width: '2rem', borderRadius: '50%', marginRight: '5px' }} src={currentUser?.picture} alt={currentUser?.name} />
               <Points />
             </MenuButton>
             <Menu>
-              <MenuItem onClick={logout}>Logout</MenuItem>
+              <MenuItem onClick={logout}>Cerrar sesión</MenuItem>
             </Menu>
           </Dropdown>
         </section>
