@@ -1,0 +1,63 @@
+.floating-item--comment {
+  padding: .5rem 1rem;
+  z-index: 10;
+
+  &>h3 {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;
+    padding-bottom: .3125rem;
+    font-size: 1em;
+  }
+
+  button {
+    width: .75rem;
+    height: .75rem;
+  }
+
+  svg {
+    max-width: 100%;
+  }
+
+
+  .comment-body {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    margin-top: .3125rem;
+
+
+    &>div {
+      max-height: 5rem;
+      overflow-y: auto;
+      width: 100%;
+    }
+
+    &>img {
+      width: 3.125rem;
+      border-radius: 50%;
+    }
+  }
+
+  .image-mini {
+    cursor: pointer;
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: contain;
+  }
+
+  .comment__text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    margin-top: .3125rem;
+    word-break: break-word;
+    font-size: .75em;
+  }
+
+  .floating-user {
+    position: absolute;
+  }
+
+}

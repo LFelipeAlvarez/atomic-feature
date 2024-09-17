@@ -1,0 +1,115 @@
+.form {
+  z-index: 20;
+
+  .close-form {
+    width: .625rem;
+    height: .625rem;
+    position: absolute;
+    top: .3125rem;
+    left: .3125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form-bottom {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #fff;
+    padding-top: 5px;
+  }
+
+  .form__image-text {
+
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: .8em;
+
+    p {
+      margin: 0;
+      margin-right: .3125rem;
+      max-width: 10rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+
+    &>button {
+      width: .9375rem;
+      height: .9375rem;
+    }
+  }
+
+
+  textarea {
+    outline: none;
+    border: none;
+    resize: none;
+    width: 100%;
+    background-color: inherit;
+    color: #fff;
+    field-sizing: content;
+    height: 3rem;
+    padding: .5rem 0;
+    background: none;
+  }
+
+  .form-icons {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    column-gap: .625rem;
+  }
+
+  .timer {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    column-gap: .2rem;
+  }
+
+  .mic-open {
+    display: inline-block;
+    animation: flash 1s linear infinite;
+    width: .625rem;
+    height: .625rem;
+    background: red;
+    border-radius: 50%;
+  }
+
+}
+
+.form--closed {
+  width: 2.8125rem;
+  height: 2.8125rem;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+
+  100% {
+    opacity: 1;
+  }
+}

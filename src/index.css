@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+:root {
+  --purple-white: #786F8E;
+  --purple: #9646FD;
+  --blue: #4F26BA;
+  --gray: #44414F;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: clamp(80%, -0.25rem + 3.333vw, 100%);
+
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  background: linear-gradient(0deg, rgba(150, 70, 253, 1) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
+  outline: none;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+svg,
+img {
+  max-width: 100%;
+  display: block;
+}
